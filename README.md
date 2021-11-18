@@ -69,9 +69,9 @@ use the following command to do the inference on the testing dataset:
 - name path to save the result
 
 ### Convert to Coco result format
-After the inference, the label of testing image would be saved in `/home/skchen/ML_practice/DL_CV/HW2/yolov5/runs/detect/{your exp}`.
-For submission, we have to convert the yolov5 label format to coco result format.
-use `To_submission.py` to do the convert, then the `answer.txt` would be saved.
+After the inference, the label of testing image would be saved in `/home/skchen/ML_practice/DL_CV/HW2/yolov5/runs/detect/{your exp}`.  
+For submission, we have to convert the yolov5 label format to coco result format.  
+use `To_submission.py` to do the convert, then the `answer.txt` would be saved.  
 Note: remember to modified the parameter(some path) in the `To_submission.py`. ex: testing image and label path.
 
 
