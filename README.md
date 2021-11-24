@@ -22,7 +22,12 @@ NYCU VRDL hw2 : try to used YOLOv5 to do the Object detection
 -Download project, required package and dataset  
  `git clone https://github.com/skchen1993/VRDL_2_YOLOv5.git`   
  `cd yolov5`   
- `pip install -r requirements.txt`    
+ `pip install -r requirements.txt` 
+   
+     
+-For data preposses (.mat file)  
+ `pip install h5py`  
+ 
    
 Download the SVHN dataset and place them into `VRDL_2_YOLOv5/datasets/images/train/`
 
