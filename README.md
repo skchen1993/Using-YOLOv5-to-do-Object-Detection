@@ -81,5 +81,5 @@ Note: remember to modified the parameter(some path) in the `To_submission.py`. e
 
 
 # Reference
-[chia56028/Street-View-House-Numbers-Detection](https://github.com/chia56028/Street-View-House-Numbers-Detection#install-packages)
-[ultralytics/yolov5](https://github.com/ultralytics/yolov5)
+[chia56028/Street-View-House-Numbers-Detection](https://github.com/chia56028/Street-View-House-Numbers-Detection#install-packages)  
+[ultralytics/yolov5](https://github.com/ultralytics/yolov5)  
