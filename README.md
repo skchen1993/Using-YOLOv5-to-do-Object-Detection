@@ -65,13 +65,14 @@ use the following command to train the yolov5 model on your custom dataset:
 - weights: choose the model structure you want
 - data: config of your dataset
 
-### Detect(inference)
-use the following command to do the inference on the testing dataset:  
-`python detect.py --source /home/skchen/ML_practice/DL_CV/HW2/datasets/images/test/ --weights /home/skchen/ML_practice/DL_CV/HW2/yolov5/runs/train/exp9/weights/best.pt --conf 0.20 --name exp9_yolo_road_det_ --save-txt --save-conf`  
+### Detect(inference)  
+[My training weight](https://drive.google.com/file/d/1aCs-VLtr7xZPUwlrhBJsGCDKPXp41bH1/view?usp=sharing)  
+Download the model weight for detect!! Then use the following command to do the inference on the testing dataset:   
+`python detect.py --source {testing data path} --weights {weight path} --conf 0.20 --name {name this detection} --save-txt --save-conf`  
 - source: path of testing data
 - weight: path of your trained model parameter
 - conf: confidence score
-- name path to save the result
+- name: name of this detection event(just a folder name)
 
 ### Convert to Coco result format
 After the inference, the label of testing image would be saved in `/home/skchen/ML_practice/DL_CV/HW2/yolov5/runs/detect/{your exp}`.  
