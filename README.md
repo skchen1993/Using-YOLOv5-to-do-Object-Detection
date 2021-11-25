@@ -79,6 +79,12 @@ For submission, we have to convert the yolov5 label format to coco result format
 use `To_submission.py` to do the convert, then the `answer.txt` would be saved.  
 Note: remember to modified the parameter(some path) in the `To_submission.py`. ex: testing image and label path.
 
+# For PEP8 Guidelines
+There are three file written by myself and trying to fit the guidelines.
+- `VRDL_2_YOLOv5/datasets/mat_to_yolo.py`
+- `VRDL_2_YOLOv5/yolov5/To_submission.py`
+- `inference.py` (can attach from link above)
+
 
 # Reference
 [chia56028/Street-View-House-Numbers-Detection](https://github.com/chia56028/Street-View-House-Numbers-Detection#install-packages)  
