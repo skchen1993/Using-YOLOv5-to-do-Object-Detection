@@ -1,4 +1,4 @@
-NYCU VRDL hw2 : try to used YOLOv5 to do the Object detection
+Try to used YOLOv5 to do the Object detection
 
 [inference code is here!!](https://colab.research.google.com/drive/1XKRQAvMS-pwD7hwrmVU04v7N_8n-CeQa?usp=sharing)  
 [Roport is here!!](https://drive.google.com/file/d/1twQbimZkz0-bdYcr5HEDyhw3WVxKiarY/view?usp=sharing)
@@ -22,8 +22,7 @@ NYCU VRDL hw2 : try to used YOLOv5 to do the Object detection
 6. Convert to Coco result format
 
 ### Download requirement
--Download project, required package and dataset  
- `git clone https://github.com/skchen1993/VRDL_2_YOLOv5.git`   
+-Download project, required package and dataset   
  `cd yolov5`   
  `pip install -r requirements.txt` 
    
@@ -32,10 +31,10 @@ NYCU VRDL hw2 : try to used YOLOv5 to do the Object detection
  `pip install h5py`  
  
    
-Download the SVHN dataset and place them into `VRDL_2_YOLOv5/datasets/images/train/`
+Download the SVHN dataset and place them into `./datasets/images/train/`
 
 ### Data preprocessing
-1. use `/VRDL_2_YOLOv5/datasets/mat_to_yolo.py` to convert SHVN .mat file to yolov5 label format, and saved in `VRDL_2_YOLOv5/datasets/labels/train/`
+1. use `./datasets/mat_to_yolo.py` to convert SHVN .mat file to yolov5 label format, and saved in `./datasets/labels/train/`
 2. split training and validation data (have to do it in image and label)
 3. folder structure looks like:  
 ```
@@ -50,11 +49,11 @@ Download the SVHN dataset and place them into `VRDL_2_YOLOv5/datasets/images/tra
 -yolov5 (parallel to datasets)
 ```
 ### Model config setting
-- prepare `svhn.yaml` in `VRDL_2_YOLOv5/yolov5/data/` 
+- prepare `svhn.yaml` in `./yolov5/data/` 
 ```
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: /home/skchen/ML_practice/DL_CV/HW2/datasets/images/train/  # 31402 images, change it to your path
-val: /home/skchen/ML_practice/DL_CV/HW2/datasets/images/val/  # 3000 images, change it to your path
+train: /home/skchen/ML_practice/DL_CV/datasets/images/train/  # 31402 images, change it to your path
+val: /home/skchen/ML_practice/DL_CV/datasets/images/val/  # 3000 images, change it to your path
 
 # number of classes
 nc: 10
@@ -78,15 +77,15 @@ Download the model weight for detect!! Then use the following command to do the 
 - name: name of this detection event(just a folder name)
 
 ### Convert to Coco result format
-After the inference, the label of testing image would be saved in `/home/skchen/ML_practice/DL_CV/HW2/yolov5/runs/detect/{your exp}`.  
+After the inference, the label of testing image would be saved in `/home/skchen/ML_practice/DL_CV/yolov5/runs/detect/{your exp}`.  
 For submission, we have to convert the yolov5 label format to coco result format.  
 use `To_submission.py` to do the convert, then the `answer.txt` would be saved.  
 Note: remember to modified the parameter(some path) in the `To_submission.py`. ex: testing image and label path.
 
 # For PEP8 Guidelines
 There are three file written by myself and trying to fit the guidelines.
-- `VRDL_2_YOLOv5/datasets/mat_to_yolo.py`
-- `VRDL_2_YOLOv5/yolov5/To_submission.py`
+- `./datasets/mat_to_yolo.py`
+- `./yolov5/To_submission.py`
 - `inference.py` (can attach from link above)
 
 
